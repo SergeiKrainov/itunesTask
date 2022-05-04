@@ -89,7 +89,7 @@ class AuthViewController: UIViewController {
                                           spacing: 10,
                                           distribution: .fillProportionally)
         
-        buttonsStackView = UIStackView(arrangedSubviews: [signUpButton, signInButton],
+        buttonsStackView = UIStackView(arrangedSubviews: [signInButton, signUpButton],
                                        axis: .horizontal,
                                        spacing: 10,
                                        distribution: .fillEqually)
