@@ -9,6 +9,7 @@ import UIKit
 
 
 class SignUpViewController: UIViewController {
+    
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false

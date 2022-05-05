@@ -11,6 +11,7 @@
 		A56040202822D2F400FDAD34 /* DetailAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A560401F2822D2F400FDAD34 /* DetailAlbumViewController.swift */; };
 		A56040222822D30600FDAD34 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56040212822D30600FDAD34 /* UserInfoViewController.swift */; };
 		A56040262822D6F500FDAD34 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56040252822D6F500FDAD34 /* AlbumTableViewCell.swift */; };
+		A56E64BD28241CA00065DE53 /* SongsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56E64BC28241CA00065DE53 /* SongsCollectionViewCell.swift */; };
 		A5831A1128227229001D9D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5831A1028227229001D9D03 /* AppDelegate.swift */; };
 		A5831A1528227229001D9D03 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5831A1428227229001D9D03 /* AuthViewController.swift */; };
 		A5831A1A2822722A001D9D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5831A192822722A001D9D03 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		A560401F2822D2F400FDAD34 /* DetailAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumViewController.swift; sourceTree = "<group>"; };
 		A56040212822D30600FDAD34 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		A56040252822D6F500FDAD34 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		A56E64BC28241CA00065DE53 /* SongsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A5831A0D28227228001D9D03 /* itunesTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itunesTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5831A1028227229001D9D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5831A1428227229001D9D03 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A56040252822D6F500FDAD34 /* AlbumTableViewCell.swift */,
+				A56E64BC28241CA00065DE53 /* SongsCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				A560401E2822D0C600FDAD34 /* UIViewController+Extension.swift in Sources */,
 				A56040222822D30600FDAD34 /* UserInfoViewController.swift in Sources */,
 				A56040202822D2F400FDAD34 /* DetailAlbumViewController.swift in Sources */,
+				A56E64BD28241CA00065DE53 /* SongsCollectionViewCell.swift in Sources */,
 				A5831A2728227B6D001D9D03 /* AlbumsViewController.swift in Sources */,
 				A5831A2528227B5A001D9D03 /* SignUpViewController.swift in Sources */,
 				A56040262822D6F500FDAD34 /* AlbumTableViewCell.swift in Sources */,
