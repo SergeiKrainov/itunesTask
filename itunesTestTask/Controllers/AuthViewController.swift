@@ -46,7 +46,7 @@ class AuthViewController: UIViewController {
     
     private let signUpButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = .red
+        button.backgroundColor = #colorLiteral(red: 0.1921568662, green: 0.007843137719, blue: 0.09019608051, alpha: 1)
         button.setTitle("SignUP", for: .normal)
         button.tintColor = .white
         button.layer.cornerRadius = 10
@@ -77,7 +77,12 @@ class AuthViewController: UIViewController {
         setupViews()
         setupDelegate()
         setConstraints()
+        registerKeyboardNotification()
         
+    }
+    
+    deinit {
+        removeKeyboardNotification()
     }
     
     private func setupViews() {
@@ -128,6 +133,38 @@ extension AuthViewController: UITextFieldDelegate {
         emailTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
         return true
+    }
+}
+
+extension AuthViewController {
+    
+    private func registerKeyboardNotification() {
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShow),
+                                               name: UIResponder.keyboardWillShowNotification ,
+                                               object: nil)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
+    }
+    
+    private func removeKeyboardNotification() {
+        
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func keyboardWillShow(notification: Notification) {
+        let userInfo = notification.userInfo
+        let keyboardHeight = (userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        scrollView.contentOffset = CGPoint(x: 0, y: keyboardHeight.height / 2)
+    }
+    
+    @objc private func keyboardWillHide(notification: Notification) {
+        scrollView.contentOffset = CGPoint.zero
     }
 }
 
