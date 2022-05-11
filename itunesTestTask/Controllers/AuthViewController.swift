@@ -136,6 +136,8 @@ extension AuthViewController: UITextFieldDelegate {
     }
 }
 
+//MARK: - Keyboard SHow Hide
+
 extension AuthViewController {
     
     private func registerKeyboardNotification() {
