@@ -22,6 +22,9 @@
 		A5831A2528227B5A001D9D03 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5831A2428227B5A001D9D03 /* SignUpViewController.swift */; };
 		A5831A2728227B6D001D9D03 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5831A2628227B6D001D9D03 /* AlbumsViewController.swift */; };
 		A5831A2B28227F0C001D9D03 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5831A2A28227F0C001D9D03 /* UIStackView+Extensions.swift */; };
+		A5C9F942283118F0005044B3 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9F941283118F0005044B3 /* AlbumModel.swift */; };
+		A5C9F94528311A5B005044B3 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9F94428311A5B005044B3 /* NetworkRequest.swift */; };
+		A5C9F94728311C8B005044B3 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9F94628311C8B005044B3 /* NetworkDataFetch.swift */; };
 		A5CAC7F5282669750036954F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CAC7F4282669750036954F /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,9 @@
 		A5831A2428227B5A001D9D03 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A5831A2628227B6D001D9D03 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		A5831A2A28227F0C001D9D03 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		A5C9F941283118F0005044B3 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		A5C9F94428311A5B005044B3 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		A5C9F94628311C8B005044B3 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
 		A5CAC7F4282669750036954F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +76,7 @@
 			children = (
 				A52FA965282CD98D00E97CED /* UserModel.swift */,
 				A52FA967282CDEE900E97CED /* AletrtOk.swift */,
+				A5C9F941283118F0005044B3 /* AlbumModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 				A56040232822D67400FDAD34 /* Controllers */,
 				A52FA964282CD97300E97CED /* Models */,
 				A52FA961282CD88500E97CED /* Services */,
+				A5C9F94328311A28005044B3 /* Network */,
 				A5831A2828227EA8001D9D03 /* Extensions */,
 				A5831A192822722A001D9D03 /* Assets.xcassets */,
 				A5831A1B2822722A001D9D03 /* LaunchScreen.storyboard */,
@@ -143,6 +151,15 @@
 				A560401D2822D0C600FDAD34 /* UIViewController+Extension.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A5C9F94328311A28005044B3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A5C9F94428311A5B005044B3 /* NetworkRequest.swift */,
+				A5C9F94628311C8B005044B3 /* NetworkDataFetch.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A560401E2822D0C600FDAD34 /* UIViewController+Extension.swift in Sources */,
+				A5C9F942283118F0005044B3 /* AlbumModel.swift in Sources */,
+				A5C9F94528311A5B005044B3 /* NetworkRequest.swift in Sources */,
 				A52FA968282CDEE900E97CED /* AletrtOk.swift in Sources */,
 				A5CAC7F5282669750036954F /* String+Extension.swift in Sources */,
 				A52FA963282CD8AA00E97CED /* UserDefaultsManager.swift in Sources */,
@@ -227,6 +246,7 @@
 				A5831A2528227B5A001D9D03 /* SignUpViewController.swift in Sources */,
 				A56040262822D6F500FDAD34 /* AlbumTableViewCell.swift in Sources */,
 				A5831A2B28227F0C001D9D03 /* UIStackView+Extensions.swift in Sources */,
+				A5C9F94728311C8B005044B3 /* NetworkDataFetch.swift in Sources */,
 				A5831A1528227229001D9D03 /* AuthViewController.swift in Sources */,
 				A5831A1128227229001D9D03 /* AppDelegate.swift in Sources */,
 			);
