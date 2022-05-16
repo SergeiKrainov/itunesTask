@@ -20,6 +20,7 @@ class AlbumsViewController: UIViewController {
     private let searchController = UISearchController(searchResultsController: nil)
     
     var albums = [Album]()
+    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,16 +75,11 @@ class AlbumsViewController: UIViewController {
                 
                 self?.albums = albumModel.results
                 print(self?.albums)
-
-                
+                self?.tableView.reloadData()
             } else {
                 print(error!.localizedDescription)
             }
-            
-            
-            
         }
-        
     }
 }
 
@@ -92,11 +88,13 @@ class AlbumsViewController: UIViewController {
 extension AlbumsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        albums.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AlbumTableViewCell
+        let album = albums[indexPath.row]
+        cell.configereAlbumCell(album: album)
         return cell
     }
 }
@@ -122,7 +120,10 @@ extension AlbumsViewController: UISearchBarDelegate {
         
         
         if searchText != "" {
-            fetchAlbums(albumName: searchText)
+            timer?.invalidate()
+            timer = Timer.scheduledTimer(withTimeInterval: 0.7, repeats: false, block: { [weak self] _ in
+                self?.fetchAlbums(albumName: searchText)
+            })
         }
     }
 }
