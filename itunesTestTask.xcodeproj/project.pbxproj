@@ -10,6 +10,7 @@
 		A52FA963282CD8AA00E97CED /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52FA962282CD8AA00E97CED /* UserDefaultsManager.swift */; };
 		A52FA966282CD98D00E97CED /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52FA965282CD98D00E97CED /* UserModel.swift */; };
 		A52FA968282CDEE900E97CED /* AletrtOk.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52FA967282CDEE900E97CED /* AletrtOk.swift */; };
+		A551C92928363C2A00193BBE /* SongsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551C92828363C2A00193BBE /* SongsModel.swift */; };
 		A560401E2822D0C600FDAD34 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A560401D2822D0C600FDAD34 /* UIViewController+Extension.swift */; };
 		A56040202822D2F400FDAD34 /* DetailAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A560401F2822D2F400FDAD34 /* DetailAlbumViewController.swift */; };
 		A56040222822D30600FDAD34 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56040212822D30600FDAD34 /* UserInfoViewController.swift */; };
@@ -32,6 +33,7 @@
 		A52FA962282CD8AA00E97CED /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		A52FA965282CD98D00E97CED /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		A52FA967282CDEE900E97CED /* AletrtOk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AletrtOk.swift; sourceTree = "<group>"; };
+		A551C92828363C2A00193BBE /* SongsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsModel.swift; sourceTree = "<group>"; };
 		A560401D2822D0C600FDAD34 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A560401F2822D2F400FDAD34 /* DetailAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumViewController.swift; sourceTree = "<group>"; };
 		A56040212822D30600FDAD34 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				A52FA965282CD98D00E97CED /* UserModel.swift */,
 				A52FA967282CDEE900E97CED /* AletrtOk.swift */,
 				A5C9F941283118F0005044B3 /* AlbumModel.swift */,
+				A551C92828363C2A00193BBE /* SongsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				A5831A2528227B5A001D9D03 /* SignUpViewController.swift in Sources */,
 				A56040262822D6F500FDAD34 /* AlbumTableViewCell.swift in Sources */,
 				A5831A2B28227F0C001D9D03 /* UIStackView+Extensions.swift in Sources */,
+				A551C92928363C2A00193BBE /* SongsModel.swift in Sources */,
 				A5C9F94728311C8B005044B3 /* NetworkDataFetch.swift in Sources */,
 				A5831A1528227229001D9D03 /* AuthViewController.swift in Sources */,
 				A5831A1128227229001D9D03 /* AppDelegate.swift in Sources */,
